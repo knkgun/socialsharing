@@ -29,8 +29,8 @@ $c = $app->getContainer();
 $appName = $c->query('AppName');
 
 $loadScripts = function() use ($appName) {
-	Util::addScript($appName, 'socialsharingtwitter');
-	Util::addStyle($appName, 'socialsharingtwitter');
+	Util::addScript($appName, 'socialsharing_twitter');
+	Util::addStyle($appName, 'socialsharing_twitter');
 };
 
 \OC::$server->getEventDispatcher()->addListener('OCP\Share::loadSocial', $loadScripts);
